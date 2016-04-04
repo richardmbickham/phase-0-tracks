@@ -1,0 +1,52 @@
+<! DOCTYPE html>
+ <html>
+  <head>
+  	<title>Table Practice</title>
+  </head>
+	<body>
+<table border=1>
+  <tr>
+    <th>Name</th>
+    <th>Star Sign</th>
+    <th>Birthday</th>
+  </tr>
+  <tr>
+    <td>Madonna</td>
+    <td>Leo</td>
+    <td>16 August</td>
+  </tr>
+  <tr>
+    <td>Ke$ha</td>
+    <td>Pices</td>
+    <td>01 March</td>
+   </tr>
+  <tr>
+    <td>Willie Nelson</td>
+    <td>Taurus</td>
+    <td>29 April</td>
+   </tr>
+</table>
+<table border=1>
+    <tr>
+      <th>Apple</th>
+      <th>Pineapple</th>
+      <th>Blueberry</th>
+    </tr>
+    <tr>
+      <td>Classic Fruit</td>
+      <td colspan="2">column span</td>
+      <td>&nbsp;</td>
+      
+    </tr>
+    <tr>
+      <td rowspan="2">Row Span</td>
+      <td>&nbsp;</td>
+      <td>Hi Mom</td>
+    </tr>
+    <tr>
+      <td>pineapple characteristic</td>
+      <td>blueberry characteristic</td>
+    </tr>
+</table>
+	</body>
+</html>
