@@ -1,0 +1,26 @@
+Algorithm to having a robot use an elevator
+
+-Prompt robot if it would like to go up or down
+	- if up, use elevator pre-programmed to take passengers up
+	- if down, use elevator pre-programmed to take passengers down
+	- if all elevators occupied, print "All elevators are currently occupied. Please stand by."
+
+-Once inside elevator, print "Choose Floor"
+	-Until desired floor, floor = floor + 1
+	-No exit until desired floor is reached
+
+-Destination Floor
+	- promt to exit elevator
+
+Algorithm for Making Fizzy Water
+
+- If water is plain and boring, prompt instructions
+	- pull lever to carbonate
+	- speak kind words to your beverage
+- Otherwise: CO2 container empty, prompt change cannister instructions
+	- remove back pannel from carbonator
+	- unscrew empty cannister
+	- replace with filled cannister
+- Otherwise:
+	- If fizzy water already made, prompt exit kitchen
+
