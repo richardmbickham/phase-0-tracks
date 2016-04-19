@@ -23,7 +23,7 @@ def decrypt(string)
     if string[index] == "a"
       string[index] = "z"
     else
-      string(index) = key(key.index(string(index))-1]
+      string(index) = key[key.index(string(index)-1]
     end
     index += 1
   end
