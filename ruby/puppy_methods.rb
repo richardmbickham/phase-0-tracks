@@ -41,3 +41,40 @@ puppy.treat_counter(5)
 
 #######################
 
+class Dolphin
+
+  def initialize
+  	puts "Let's go swim with dolphins!"
+  end
+  
+  def fish(interger)
+    puts "The dolphin ate #{interger} fish today!"
+    interger
+  end
+  
+  def splash(interger)
+  	interger.times do
+  		puts "Splash!"
+  	end
+  end
+  
+end
+
+
+#Driver Code
+dolphin = Dolphin.new
+dolphin.fish(6)
+dolphin.splash(10)
+
+array = []
+
+	50.times do |dolphin|
+		dolphin = Dolphin.new
+		array << dolphin
+	end
+
+	array.each do |dolphin|
+		dolphin.fish(9)
+		dolphin.splash(4)
+	end
+
