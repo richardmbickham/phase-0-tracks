@@ -1,14 +1,14 @@
 puts "What is your hamster's name?"
-	hamster_name = gets.chomp
+	hamster_name = gets.chomp.to_s
 
 puts "How squeaky is your hamster? Choose a noise level 1-10, 10 being the highest."
 	hamster_volume = gets.chomp.to_i
 
 puts "What color is your hamster?"
-	fur_color = gets.chomp
+	fur_color = gets.chomp.to_s
 
 puts "What is the estimated age of your hamster? If unknown, leave blank."
-	hamster_age = gets.chomp
+	hamster_age = gets.chomp.to_i
 	
 	if hamster_age == ""	
 		hamster_age = nil
