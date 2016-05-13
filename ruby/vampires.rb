@@ -15,32 +15,33 @@ puts "In what year were you born?"
 puts "Our company cafeteria serves garlic bread. Should we order some for you? (y/n)"
 	garlic = gets.chomp.downcase
 	
-	unless garlic == "y"
-		garlic = false
-	else garlic = true
+	if garlic == "n"
+		garlic = true
+	else garlic = false
 	end
 
 puts "Would you like to enroll in the company's health insurance plan? (y/n)"
 	insurance = gets.chomp
 	
-	unless insurance == "y"
-		insurance = false
-	else insurance = true
+	if insurance == "n"
+		insurance = true
+	else insurance = false
 	end
 
-unless employee_age == (2016 - birth_year)
+if employee_age == (2016 - birth_year)
 	actual_age = true
 else actual_age = false
 end		
 
-if employee_name == "Drake Cula" || "Tu Fang"
-	puts "Definitely a vampire."
-elsif actual_age && (garlic || insurance)
+
+if actual_age && (!garlic || !insurance)
 	puts "Probably not a vampire."
-elsif !actual_age && (!garlic || !insurance) 
+elsif !actual_age && (garlic || insurance) 
 	puts "Probably a vampire."
-elsif !actual_age && (!garlic && !insurance) 
+elsif !actual_age && (garlic && insurance) 
 	puts "Almost certainly a vampire."
+elsif employee_name == "Drake Cula" || "Tu Fang"
+	puts "Definitely a vampire."
 else 
 	puts "Results are inconclusive."
 end
@@ -61,4 +62,5 @@ end
 
 puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
 
+end
 end
