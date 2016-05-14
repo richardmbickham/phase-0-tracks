@@ -1,12 +1,10 @@
-# METHOD DECLARATIONS
-
-
 def encrypt(string)
-	key = "abcdefghijklmnopqrstuvwxyz"
-  	index = 0
+    index = 0
   while index < string.length
     if string[index] == "z"
       string[index] = "a"
+    elsif string[index] == " "
+      string[index] = " "
     else
       string[index] = string[index].next
     end
@@ -15,20 +13,26 @@ def encrypt(string)
   p string
 end
 
+# encrypt("zed tramp")
 
 def decrypt(string)
-  key = "abcdefghijklmnopqrstuvwxyz"
-  index = 0
-  while index < string.length
-    if string[index] == "a"
-      string[index] = "z"
-    else
-      string(index) = key[key.index(string(index)-1]
+  alphabet = "abcdefghijklmnopqrstuvwxyz"
+  i = 0
+  while i < string.length
+    if ("b".."z").include? string[i]
+      # string[i] = alphabet[alphabet.index(string[i]) - 1]
+      index_in_alphabet = alphabet.index(string[i])
+      index_in_alphabet -= 1
+      string[i] = alphabet[index_in_alphabet]
+    elsif string[i] == "a"
+      string[i] = "z"
     end
-    index += 1
+    i += 1
   end
-  p string
+  string
 end
+
+#decrypt("afe usbnq")
 
 # TEST
 # encrypt("abc")- successful
