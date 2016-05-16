@@ -12,6 +12,11 @@
 p "What is your first and last name? (ex. Bernie Sanders)"
   full_name = gets.chomp.to_s.downcase
 
+def name_swap(full_name)
+  new_name = full_name.split(' ')
+  new_name.reverse.join(' ')
+end
+
 alias_name = full_name.split('')
 alias_name = full_name.reverse
 
