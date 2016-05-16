@@ -12,13 +12,17 @@
 p "What is your first and last name? (ex. Bernie Sanders)"
   full_name = gets.chomp.to_s.downcase
 
-alias_name = full_name.split('')
-alias_name = full_name.reverse
+def name_swap(full_name)
+  new_name = full_name.split(' ')
+  new_name.reverse.join(' ')
+end
+
+def vowel_shift(full_name)
 
 vowels = ['a', 'e', 'i', 'o', 'u']
 vowel_shift = []
 
-vowels.each do |vowel|
+  vowels.each do |vowel|
   vowel_shift << vowel.next
     if vowel == "u"
       vowel = "a"
@@ -26,6 +30,8 @@ vowels.each do |vowel|
       vowel = vowel.next
     end
   end
+  full_name
+end
   
 consonants = ('a'..'z').to_a - vowels
 consonant_shift = []
