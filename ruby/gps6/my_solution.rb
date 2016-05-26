@@ -51,11 +51,11 @@ private
     speed = 2.5
 
      case @population_density 
-     when 200..150
+     when 150..200
       speed += 0.5
-     when 149..100
+     when 100..149
       speed += 1
-     when 99..50
+     when 50..99
       speed += 1.5
      else 
       speed 
