@@ -34,7 +34,7 @@ private
          number_of_deaths = (@population * 0.4).floor
     when 100..149
          number_of_deaths = (@population * 0.3).floor
-    when 99..50
+    when 50..99
          number_of_deaths = (@population * 0.1).floor
     else
         number_of_deaths = (@population * 0.05).floor
