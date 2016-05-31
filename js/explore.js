@@ -16,4 +16,6 @@ function reverse(string) {
 // DRIVER TEST CODE
 
 reversedString = reverse("Hello");
-	console.log("'Hello' written backwards is '" + reversedString +"'");
+	if (1 == 1){
+		console.log("'Hello' written backwards is '" + reversedString +"'");
+	}
